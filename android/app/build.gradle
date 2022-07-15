@@ -130,8 +130,17 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
+    flavorDimensions "appstore"
+
+    productFlavors{
+        amazon{
+            dimension "appstore"
+            missingDimensionStrategy "store", "amazon"
+        }
+    }
+
     defaultConfig {
-        applicationId "com.sleephelpz.fireflycountz"
+        applicationId "com.amazon.fireflycountz"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

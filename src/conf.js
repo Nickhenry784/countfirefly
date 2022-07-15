@@ -1,18 +1,37 @@
 export const items = [
   {
-    sku: 'fireflycountz_1',
+    sku: 'com.amazon.reflycountz_100',
     value: 100,
   },
   {
-    sku: 'fireflycountz_2',
+    sku: 'com.amazon.reflycountz_200',
     value: 200,
   },
   {
-    sku: 'fireflycountz_3',
+    sku: 'com.amazon.reflycountz_300',
     value: 300,
   },
   {
-    sku: 'fireflycountz_4',
+    sku: 'com.amazon.reflycountz_400',
     value: 400,
+  },
+];
+
+export const subs = [
+  {
+    sku: 'com.amazon.weekly_reflycountz_100',
+    value: 100,
+  },
+  {
+    sku: 'com.amazon.weekly_reflycountz_200',
+    value: 200,
+  },
+  {
+    sku: 'com.amazon.monthly_reflycountz_400',
+    value: 400,
+  },
+  {
+    sku: 'com.amazon.monthly_reflycountz_600',
+    value: 600,
   },
 ];

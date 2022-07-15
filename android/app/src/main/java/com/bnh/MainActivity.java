@@ -1,4 +1,4 @@
-package com.sleephelpz.fireflycountz;
+package com.amazon.fireflycountz;
 
 import com.facebook.react.ReactActivity;
 

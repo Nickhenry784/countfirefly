@@ -31,7 +31,7 @@ export default function App() {
             <Stack.Screen
               name="BUY"
               component={Buy}
-              options={{title: 'Buy Turns'}}
+              options={{title: 'Buy'}}
             />
             <Stack.Screen
               name="Play"

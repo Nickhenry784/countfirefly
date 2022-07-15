@@ -22,6 +22,9 @@ const Play = () => {
   const [position, setPostition] = useState(
     {top: Math.random() * windowHeight, left: Math.random() * windowWidth}
   )
+  const [position1, setPostition1] = useState(
+    {top: Math.random() * windowHeight, left: Math.random() * windowWidth}
+  )
 
 
   useEffect(() => {
@@ -29,6 +32,7 @@ const Play = () => {
       if(time > 0){
         setTime(time - 1);
         setPostition({top: Math.random() * windowHeight, left: Math.random() * windowWidth});
+        setPostition1({top: Math.random() * windowHeight, left: Math.random() * windowWidth});
       }
       if (time === 0){
         setScore(score + 1);
@@ -54,6 +58,14 @@ const Play = () => {
         left: position.left,
         width: windowWidth * 0.1,
         height: windowWidth * 0.1,
+        resizeMode: 'contain',
+      }} source={images.firefly} />
+      <Animated.Image style={{
+        position: 'absolute',
+        top: position1.top,
+        left: position1.left,
+        width: windowWidth * 0.08,
+        height: windowWidth * 0.08,
         resizeMode: 'contain',
       }} source={images.firefly} />
       <View style={appStyle.bottomView}>
